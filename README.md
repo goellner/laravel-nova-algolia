@@ -2,11 +2,13 @@
 
 ## Local setup
 1. copy .env.example to .env
-2. add auth.json for laravel nova
+2. add auth.json for Laravel Nova
 3. setup local mysql db called `novatest`
-4. setup local domain (nova.test)
-5. add .env values for Algolia
-6. Login to nova http://nova.test/nova
+4. setup local domain (nova.test) - `cd public` and `valet link nova`
+5. add both .env values for Algolia
+6. run `composer install`
+7. run `php artisan migrate:fresh --seed`
+8. Login to nova http://nova.test/nova
 
 Username: user@example.com
 Password: password
